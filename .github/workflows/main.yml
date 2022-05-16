@@ -5,4 +5,4 @@ jobs:
   Print-Hello-World:
     runs-on: ubuntu-latest
     steps:
-      - run: echo not so nice message
+      - run: echo hey
