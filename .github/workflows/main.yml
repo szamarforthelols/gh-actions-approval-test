@@ -1,8 +1,13 @@
 name: GH Actions demo
 
-on: [pull_request_target]
+on:
+  pull_request:
+  push:
+    branches: [main]
 jobs:
   Print-Hello-World:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hey
+      - run: echo echo $SOME_SECRET
+        env:
+          SOME_SECRET: ${{ secrets.SOME_SECRET }}
