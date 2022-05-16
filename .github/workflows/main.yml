@@ -1,0 +1,8 @@
+name: GH Actions demo
+
+on: [push]
+jobs:
+  Print-Hello-World:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello world
