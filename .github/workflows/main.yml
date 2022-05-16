@@ -11,3 +11,4 @@ jobs:
       - run: echo echo $SOME_SECRET
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
+      - run: echo something nice
